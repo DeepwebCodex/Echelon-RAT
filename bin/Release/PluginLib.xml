@@ -1,0 +1,507 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PluginLib</name>
+    </assembly>
+    <members>
+        <member name="T:PluginLib.NoDLLException">
+            <summary>
+            Die Datei ist keine DLL.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoDLLException.Path">
+            <summary>
+            Gibt den Pfad zur Plugin-DLL an.
+            </summary>
+        </member>
+        <member name="M:PluginLib.NoDLLException.#ctor(System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPath"></param>
+        </member>
+        <member name="T:PluginLib.NoAssemblyDLLException">
+            <summary>
+            Die Datei ist keine .NET Assembly DLL.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoAssemblyDLLException.Path">
+            <summary>
+            Gibt den Pfad zur Plugin-DLL an.
+            </summary>
+        </member>
+        <member name="M:PluginLib.NoAssemblyDLLException.#ctor(System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPath"></param>
+        </member>
+        <member name="T:PluginLib.NoCallableObjectException">
+            <summary>
+            Namespace oder Klasse nicht gefunden.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoCallableObjectException.Path">
+            <summary>
+            Gibt den Pfad zur Plugin-DLL an.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoCallableObjectException.NamespaceName">
+            <summary>
+            Gibt den Namespace an, der möglicherweise nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoCallableObjectException.ClassName">
+            <summary>
+            Gibt die Klasse an, die möglicherweise nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.NoCallableObjectException.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPath"></param>
+            <param name="sNamespace"></param>
+            <param name="sClass"></param>
+        </member>
+        <member name="T:PluginLib.NoInstanceException">
+            <summary>
+            Instanz des Plugins konnte nicht erstellt werden.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoInstanceException.Path">
+            <summary>
+            Gibt den Pfad zur Plugin-DLL an.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoInstanceException.NamespaceName">
+            <summary>
+            Gibt den Namespace an, der möglicherweise nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NoInstanceException.ClassName">
+            <summary>
+            Gibt die Klasse an, die möglicherweise nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.NoInstanceException.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPath"></param>
+            <param name="sNamespace"></param>
+            <param name="sClass"></param>
+        </member>
+        <member name="T:PluginLib.NeededVariableNotFoundException">
+            <summary>
+            Eine unbedingt benötigte Variable wurde nicht gefunden.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NeededVariableNotFoundException.Path">
+            <summary>
+            Gibt den Pfad zur Plugin-DLL an.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NeededVariableNotFoundException.VariableName">
+            <summary>
+            Gibt den Variablennamen an, der nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.NeededVariableNotFoundException.#ctor(System.String,System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPath"></param>
+            <param name="sVariableName"></param>
+        </member>
+        <member name="T:PluginLib.NeededPropertyNotFoundException">
+            <summary>
+            Eine unbedingt benötigte Property wurde nicht gefunden.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NeededPropertyNotFoundException.Path">
+            <summary>
+            Gibt den Pfad zur Plugin-DLL an.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NeededPropertyNotFoundException.PropertyName">
+            <summary>
+            Gibt den Propertynamen an, der nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.NeededPropertyNotFoundException.#ctor(System.String,System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPath"></param>
+            <param name="sPropertyName"></param>
+        </member>
+        <member name="T:PluginLib.NeededMethodNotFoundException">
+            <summary>
+            Eine unbedingt benötigte Methode wurde nicht gefunden.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NeededMethodNotFoundException.Path">
+            <summary>
+            Gibt den Pfad zur Plugin-DLL an.
+            </summary>
+        </member>
+        <member name="F:PluginLib.NeededMethodNotFoundException.MethodName">
+            <summary>
+            Gibt den Methodennamen an, der nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.NeededMethodNotFoundException.#ctor(System.String,System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPath"></param>
+            <param name="sMethodName"></param>
+        </member>
+        <member name="T:PluginLib.PluginNotFoundException">
+            <summary>
+            Plugin existiert nicht.
+            </summary>
+        </member>
+        <member name="F:PluginLib.PluginNotFoundException.PluginName">
+            <summary>
+            Gibt den Pluginnamen an, der nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.PluginNotFoundException.#ctor(System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPluginName"></param>
+        </member>
+        <member name="T:PluginLib.VariableNotFoundException">
+            <summary>
+            Variable existiert nicht.
+            </summary>
+        </member>
+        <member name="F:PluginLib.VariableNotFoundException.VariableName">
+            <summary>
+            Gibt den Variablennamen an, der nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.VariableNotFoundException.#ctor(System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sVariableName"></param>
+        </member>
+        <member name="T:PluginLib.PropertyNotFoundException">
+            <summary>
+            Property existiert nicht.
+            </summary>
+        </member>
+        <member name="F:PluginLib.PropertyNotFoundException.PropertyName">
+            <summary>
+            Gibt den Propertynamen an, der nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.PropertyNotFoundException.#ctor(System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sPropertyName"></param>
+        </member>
+        <member name="T:PluginLib.MethodNotFoundException">
+            <summary>
+            Methode existiert nicht.
+            </summary>
+        </member>
+        <member name="F:PluginLib.MethodNotFoundException.MethodName">
+            <summary>
+            Gibt den Methodennamen an, der nicht gefunden wurde.
+            </summary>
+        </member>
+        <member name="M:PluginLib.MethodNotFoundException.#ctor(System.String)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sMethodName"></param>
+        </member>
+        <member name="T:PluginLib.Plugin">
+            <summary>
+            Plugin Klasse zum speichern von Plugin Daten.
+            </summary>
+        </member>
+        <member name="M:PluginLib.Plugin.#ctor(System.String,System.Object,System.Collections.Generic.Dictionary{System.String,PluginLib.VariableData}@,System.Collections.Generic.Dictionary{System.String,PluginLib.PropertyData}@,System.Collections.Generic.Dictionary{System.String,PluginLib.MethodData}@)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sName"></param>
+            <param name="objInstance"></param>
+            <param name="lstVariables"></param>
+            <param name="lstProperties"></param>
+            <param name="lstMethods"></param>
+        </member>
+        <member name="M:PluginLib.Plugin.GetName">
+            <summary>
+            Gibt den Pluginnamen zurück.
+            </summary>
+            <returns>Pluginname</returns>
+        </member>
+        <member name="M:PluginLib.Plugin.GetInstance">
+            <summary>
+            Gibt die Instanz des Plugins zurück.
+            </summary>
+            <returns>Instanz</returns>
+        </member>
+        <member name="M:PluginLib.Plugin.GetVariable(System.String)">
+            <summary>
+            Gibt ein VariableData-Objekt anhand eines Namens zurück.
+            </summary>
+            <param name="sName">Variablenname</param>
+            <returns>VariableData-Objekt</returns>
+            <exception cref="T:PluginLib.VariableNotFoundException">Variable mit übergebenem Namen existiert nicht.</exception>
+        </member>
+        <member name="M:PluginLib.Plugin.GetVariables">
+            <summary>
+            Gibt ein Dictionary-Objekt mit allen VariableData-Objekten des Plugins zurück.
+            </summary>
+            <returns>Dictionary-Objekt mit Variablenamen als Key und VariableData-Objekt als Value</returns>
+        </member>
+        <member name="M:PluginLib.Plugin.GetProperty(System.String)">
+            <summary>
+            Gibt ein PropertyData-Objekt anhand eines Namens zurück.
+            </summary>
+            <param name="sName">Propertyname</param>
+            <returns>PropertyData-Objekt</returns>
+            <exception cref="T:PluginLib.PropertyNotFoundException">Property mit übergebenem Namen existiert nicht.</exception>
+        </member>
+        <member name="M:PluginLib.Plugin.GetProperties">
+            <summary>
+            Gibt ein Dictionary-Objekt mit allen PropertyData-Objekten des Plugins zurück.
+            </summary>
+            <returns>Dictionary-Objekt mit Propertynamen als Key und PropertyData-Objekt als Value</returns>
+        </member>
+        <member name="M:PluginLib.Plugin.GetMethod(System.String)">
+            <summary>
+            Gibt ein MethodData-Objekt anhand eines Namens zurück.
+            </summary>
+            <param name="sName">Methodenname</param>
+            <returns>MethodData-Objekt</returns>
+            <exception cref="T:PluginLib.MethodNotFoundException">Methode mit übergebenem Namen existiert nicht.</exception>
+        </member>
+        <member name="M:PluginLib.Plugin.GetMethods">
+            <summary>
+            Gibt ein Dictionary-Objekt mit allen MethodData-Objekten des Plugins zurück.
+            </summary>
+            <returns>Dictionary-Objekt mit Methodennamen als Key und MethodData-Objekt als Value</returns>
+        </member>
+        <member name="T:PluginLib.VariableData">
+            <summary>
+            VariableData Klasse zum speichern von Variable Daten.
+            </summary>
+        </member>
+        <member name="M:PluginLib.VariableData.#ctor(System.String,System.Reflection.FieldInfo,System.Object,System.Object)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sName"></param>
+            <param name="fiVariable"></param>
+            <param name="objDefault"></param>
+            <param name="objPluginInstance"></param>
+        </member>
+        <member name="M:PluginLib.VariableData.GetName">
+            <summary>
+            Gibt den Variablennamen zurück.
+            </summary>
+            <returns>Variablenname</returns>
+        </member>
+        <member name="M:PluginLib.VariableData.GetValue">
+            <summary>
+            Gibt den Wert der Variable zurück.
+            </summary>
+            <returns>Variablewert</returns>
+        </member>
+        <member name="M:PluginLib.VariableData.SetValue(System.Object)">
+            <summary>
+            Setzt den Wert der Variable.
+            </summary>
+        </member>
+        <member name="T:PluginLib.PropertyData">
+            <summary>
+            PropertyData Klasse zum speichern von Property Daten.
+            </summary>
+        </member>
+        <member name="M:PluginLib.PropertyData.#ctor(System.String,System.Reflection.PropertyInfo,System.Object@)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sName"></param>
+            <param name="piProperty"></param>
+            <param name="objPluginInstance"></param>
+        </member>
+        <member name="M:PluginLib.PropertyData.GetName">
+            <summary>
+            Gibt den Propertynamen zurück.
+            </summary>
+            <returns>Propertyname</returns>
+        </member>
+        <member name="M:PluginLib.PropertyData.GetValue">
+            <summary>
+            Gibt den Wert der Property zurück.
+            </summary>
+            <returns>Propertywert</returns>
+        </member>
+        <member name="M:PluginLib.PropertyData.SetValue(System.Object)">
+            <summary>
+            Setzt den Wert der Property.
+            </summary>
+        </member>
+        <member name="T:PluginLib.MethodData">
+            <summary>
+            MethodData Klasse zum speichern von Methoden Daten.
+            </summary>
+        </member>
+        <member name="M:PluginLib.MethodData.#ctor(System.String,System.Reflection.MethodInfo,System.Object@)">
+            <summary>
+            Nur interne Verwendung. NICHT AUFRUFEN!
+            </summary>
+            <param name="sName"></param>
+            <param name="miMethod"></param>
+            <param name="objPluginInstance"></param>
+        </member>
+        <member name="M:PluginLib.MethodData.GetName">
+            <summary>
+            Gibt den Methodennamen zurück.
+            </summary>
+            <returns>Methodenname</returns>
+        </member>
+        <member name="M:PluginLib.MethodData.GetMethodInfo">
+            <summary>
+            Gibt das MethodInfo-Objekt der Methode zurück.
+            </summary>
+            <returns>MethodInfo-Objekt</returns>
+        </member>
+        <member name="M:PluginLib.MethodData.Invoke">
+            <summary>
+            Ruft die Methode ohne Parameter auf und gibt den Wert als Object-Objekt zurück.
+            </summary>
+            <returns>Wert</returns>
+        </member>
+        <member name="M:PluginLib.MethodData.Invoke(System.Object[])">
+            <summary>
+            Ruft die Methode mit Parametern auf und gibt den Wert als Object-Objekt zurück.
+            </summary>
+            <param name="objParameters">Parameter</param>
+            <returns>Wert</returns>
+        </member>
+        <member name="T:PluginLib.PluginLib">
+            <summary>
+            PluginLib Hauptklasse die zur Verwendung benutzt wird.
+            </summary>
+        </member>
+        <member name="M:PluginLib.PluginLib.#ctor(System.String,System.String)">
+            <summary>
+            Konstruktor der PluginLibrary.
+            </summary>
+            <param name="sNamespace">Namespace des Plugins ($plugin dient als Platzhalter und wird mit DLL-Namen ersetzt)</param>
+            <param name="sClass">Klasse des Plugins ($plugin dient als Platzhalter und wird mit DLL-Namen ersetzt)</param>
+        </member>
+        <member name="M:PluginLib.PluginLib.AddVariable(System.String)">
+            <summary>
+            Fügt eine Variable hinzu die unbedingt benötigt wird.
+            </summary>
+            <param name="sName">Variablenname</param>
+        </member>
+        <member name="M:PluginLib.PluginLib.AddVariableOptional(System.String,System.Object)">
+            <summary>
+            Fügt eine Variable hinzu die nicht existieren muss.
+            </summary>
+            <param name="sName">Variablenname</param>
+            <param name="objDefault">Standardwert</param>
+        </member>
+        <member name="M:PluginLib.PluginLib.AddProperty(System.String)">
+            <summary>
+            Fügt eine Property hinzu die unbedingt benötigt wird.
+            </summary>
+            <param name="sName">Propertyname</param>
+        </member>
+        <member name="M:PluginLib.PluginLib.AddPropertyOptional(System.String)">
+            <summary>
+            Fügt eine Property hinzu die nicht existieren muss.
+            </summary>
+            <param name="sName">Propertyname</param>
+        </member>
+        <member name="M:PluginLib.PluginLib.AddMethod(System.String)">
+            <summary>
+            Fügt eine Methode hinzu die unbedingt benötigt wird.
+            </summary>
+            <param name="sName">Methodenname</param>
+        </member>
+        <member name="M:PluginLib.PluginLib.AddMethodOptional(System.String)">
+            <summary>
+            Fügt eine Methode hinzu die nicht existieren muss.
+            </summary>
+            <param name="sName">Methodenname</param>
+        </member>
+        <member name="M:PluginLib.PluginLib.LoadPlugin(System.String)">
+            <summary>
+            Lädt ein Plugin durch Angabe des Pfads zur DLL via Stream.
+            </summary>
+            <param name="sPath">DLL-Pfad</param>
+            <exception cref="T:System.IO.FileNotFoundException">Die Datei existiert nicht.</exception>
+            <exception cref="T:PluginLib.NoDLLException">Die Datei ist keine DLL.</exception>
+            <exception cref="T:PluginLib.NoAssemblyDLLException">Die Datei ist keine .NET Assembly DLL.</exception>
+            <exception cref="T:PluginLib.NoCallableObjectException">Namespace oder Klasse nicht gefunden.</exception>
+            <exception cref="T:PluginLib.NoInstanceException">Instanz des Plugins konnte nicht erstellt werden.</exception>
+            <exception cref="T:PluginLib.NeededVariableNotFoundException">Eine unbedingt benötigte Variable wurde nicht gefunden.</exception>
+            <exception cref="T:PluginLib.NeededMethodNotFoundException">Eine unbedingt benötigte Methode wurde nicht gefunden.</exception>
+        </member>
+        <member name="M:PluginLib.PluginLib.LoadPlugin(System.String,System.Boolean)">
+            <summary>
+            Lädt ein Plugin durch Angabe des Pfads zur DLL.
+            </summary>
+            <param name="sPath">DLL-Pfad</param>
+            <param name="bStream">Gibt an, ob die DLL per Stream geladen wird (verhindert Löschung/Bearbeitung während die DLL geladen ist)</param>
+            <exception cref="T:System.IO.FileNotFoundException">Die Datei existiert nicht.</exception>
+            <exception cref="T:PluginLib.NoDLLException">Die Datei ist keine DLL.</exception>
+            <exception cref="T:PluginLib.NoAssemblyDLLException">Die Datei ist keine .NET Assembly DLL.</exception>
+            <exception cref="T:PluginLib.NoCallableObjectException">Namespace oder Klasse nicht gefunden.</exception>
+            <exception cref="T:PluginLib.NoInstanceException">Instanz des Plugins konnte nicht erstellt werden.</exception>
+            <exception cref="T:PluginLib.NeededVariableNotFoundException">Eine unbedingt benötigte Variable wurde nicht gefunden.</exception>
+            <exception cref="T:PluginLib.NeededMethodNotFoundException">Eine unbedingt benötigte Methode wurde nicht gefunden.</exception>
+        </member>
+        <member name="M:PluginLib.PluginLib.LoadPlugins(System.String,System.IO.SearchOption)">
+            <summary>
+            Lädt alle Plugins in einem Ordner durch Angabe des Pfads zum Ordner.
+            </summary>
+            <param name="sDirectoryPath">Ordnerpfad</param>
+            <param name="soOptions">Suchoptionen</param>
+            <exception cref="T:System.IO.DirectoryNotFoundException">Der Ordner existiert nicht.</exception>
+        </member>
+        <member name="M:PluginLib.PluginLib.GetPlugin(System.String)">
+            <summary>
+            Gibt ein Plugin-Objekt anhand eines Namens zurück.
+            </summary>
+            <param name="sName">Pluginname</param>
+            <returns>Plugin-Objekt</returns>
+            <exception cref="T:PluginLib.PluginNotFoundException">Plugin mit übergebenem Namen existiert nicht.</exception>
+        </member>
+        <member name="M:PluginLib.PluginLib.GetPlugins">
+            <summary>
+            Gibt ein Dictionary-Objekt mit allen Plugin-Objekten zurück.
+            </summary>
+            <returns>Dictionary-Objekt mit Pluginnamen als Key und Plugin-Objekt als Key</returns>
+        </member>
+        <member name="M:PluginLib.PluginLib.InvokeMethodOnAllPlugins(System.String)">
+            <summary>
+            Ruft eine Methode ohne Parameter in allen Plugins auf.
+            </summary>
+            <param name="sName">Methodenname</param>
+            <returns>Dictionary-Objekt mit Pluginnamen als Key und Wert als Value</returns>
+        </member>
+        <member name="M:PluginLib.PluginLib.InvokeMethodOnAllPlugins(System.String,System.Object[])">
+            <summary>
+            Ruft eine Methode ohne Parameter in allen Plugins auf.
+            </summary>
+            <param name="sName">Methodenname</param>
+            <param name="objParameters">Parameter</param>
+            <returns>Dictionary-Objekt mit Pluginnamen als Key und Wert als Value</returns>
+        </member>
+    </members>
+</doc>
